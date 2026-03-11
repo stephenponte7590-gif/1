@@ -3,64 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Community Herald</title>
+    <title>Nosey Fall River | The Spindle City's Eyes and Ears</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-slate-50 text-slate-900">
 
-<div class="site-wrapper">
-    <header>
-        <h1>THE COMMUNITY HERALD</h1>
-        <p class="tagline">Independent. Local. Essential. | March 11, 2026</p>
-    </header>
-
-    <nav>
-        <a href="#">City News</a>
-        <a href="#">Public Records</a>
-        <a href="#">True Crime</a>
-        <a href="#">History</a>
-    </nav>
-
-    <div class="grid-container">
-        <article class="featured-story">
-            <img src="https://via.placeholder.com/800x400" alt="Featured News" style="width:100%">
-            <h2>Headline: Major Local Policy Change Expected Tonight</h2>
-            <p class="meta">By Staff Reporter</p>
-            <p>This is the primary story of the day. Using a grid layout allows this story to take up more visual "weight" on the page, drawing the reader's eye immediately to the most important news...</p>
-            <a href="articles/first-story.html">
-        </article>
-
-        <aside class="sidebar">
-            <h3>Latest Updates</h3>
-            <div class="news-brief">
-                <h4>Police Report: Weekend Summary</h4>
-                <p>Summaries of local incidents from the past 48 hours.</p>
+    <div class="bg-white border-b border-slate-200 py-2 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-[10px] font-black uppercase tracking-widest">
+            <div class="flex items-center gap-4">
+                <span class="text-red-600">● Breaking</span>
+                <marquee class="w-48 md:w-96 font-bold text-slate-500">Waterfront redevelopment vote scheduled for Tuesday... New Bakery opening on Pleasant St...</marquee>
             </div>
-            <div class="news-brief">
-                <h4>School Board Vote Results</h4>
-                <p>New budget passed with a 5-2 majority late Tuesday.</p>
+            <div class="hidden md:block">
+                Fall River, MA • 52°F Cloudy
             </div>
-            <div class="news-brief">
-                <h4>Upcoming Town Hall</h4>
-                <p>Public invited to discuss new park developments.</p>
-            </div>
-        </aside>
-
-        <article class="sub-story">
-            <h4>Local Business Spotlight</h4>
-            <p>Exploring the history of the oldest storefront in the downtown district.</p>
-        </article>
-
-        <article class="sub-story">
-            <h4>Weather Outlook</h4>
-            <p>Expect clear skies and rising temperatures heading into the weekend.</p>
-        </article>
+        </div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 The Community Herald | Powered by GitHub</p>
-    </footer>
-</div>
+    <header class="bg-white border-b-8 border-black py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-4">Volume I • Issue 01 • Since 2026</p>
+            <h1 class="news-title text-7xl md:text-9xl font-black italic tracking-tighter uppercase">
+                Nosey <span class="text-red-600">FR</span>
+            </h1>
+            <div class="mt-8 flex items-center justify-center gap-6">
+                <hr class="w-full border-slate-200">
+                <span class="shrink-0 text-[10px] font-black uppercase tracking-widest italic">The South Coast's Daily Watchdog</span>
+                <hr class="w-full border-slate-200">
+            </div>
+        </div>
+    </header>
 
-</body>
-</html>
+    <nav class="bg-white border-b border-black sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+            <div class="flex gap-6 text-xs font-black uppercase tracking-tight overflow-x-auto no-scrollbar">
+                <a href="#" class="hover:text-red-600 border-b-2 border-transparent hover:border-red-600 py-1 transition">Politics</a>
+                <a href="#" class="hover:text-red-600 border-b-2 border-transparent hover:border-red-600 py-1 transition">Crime</a>
+                <a href="#" class="hover:text-red-600 border-b-2 border-transparent hover:border-red-600 py-1 transition">Life & Style</a>
+                <a href="#" class="hover:text-red-600 border-b-2 border-transparent hover:border-red-600 py-1 transition">Sports</a>
+                <a href="#" class="text-red-600 font-black">Submit Tips</a>
+            </div>
+            <div class="md:flex gap-4 hidden">
+                <button class="text-[10px] font-bold uppercase border-2 border-black px-4 py-2 hover:bg-black hover:text-white transition">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1
